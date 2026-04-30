@@ -86,7 +86,7 @@ function calcular(inputs, vanos, db) {
     { nombre:"ARANDELA CSA",       cantPorKit:8, ...arandela8,     atributos:"DIN-125 · M8 · Acero" }
   ]});
 
-  const barraRT = lookup("BARRA_PP",{Acabado:"GS",chafado:"PP",espesor_barra:1.5,longitud:longBarraRT,seccion_barra:"Ø35",subtipo:"Barra",tipo:"PerfT"});
+  const barraRT = lookup("BARRA_PP",{Acabado:"GS",chafado:"PP",espesor_barra:2,longitud:longBarraRT,seccion_barra:"Ø35",subtipo:"Barra",tipo:"PerfT"});
   kits.push({ id:"KIT_RT", nombre:"Kit Riostra Techo", cantidad:kRT, color:"#0891b2", piezas:[
     { nombre:"BARRA PP RT",          cantPorKit:2, ...barraRT,      atributos:`longitud=${longBarraRT}mm · Ø35` },
     { nombre:"BRIDA I-12 RT ESTACA", cantPorKit:2, ...bridaEstaca,  atributos:"Ø40 · e=2 · L=40" },
@@ -123,7 +123,7 @@ function calcular(inputs, vanos, db) {
 
   if (kFilm > 0) {
     kits.push({ id:"KIT_FILM", nombre:"Kit Film", cantidad:kFilm, color:"#7c3aed", piezas:[
-      { nombre:"CUERDA",           cantPorKit:cantCuerda,    ...lookup("CUERDA",{especifico:"macotrunel",seccion:"8 mm",subtipo:"Otro",tipo:"Com",tipo_comercial_otro:"Cuerda"}), atributos:`${cantCuerda}m/kit · 8mm` },
+      { nombre:"CUERDA",           cantPorKit:cantCuerda,    ...lookup("CUERDA",{especifico:"macotrunel",seccion:"7.5 mm",subtipo:"Otro",tipo:"Com",tipo_comercial_otro:"Cuerda"}), atributos:`${cantCuerda}m/kit · 8mm` },
       { nombre:"MANGUERA",         cantPorKit:32,            ...lookup("MANGUERA",{acabado_canal:"GS",especifico:"Manguera Ø20x1,2mm",subtipo:"Acc.Canal",tipo:"Acc"}), atributos:"Ø20x1,2mm · 32ud/kit" },
       { nombre:"BOLA POLIESTIRENO",cantPorKit:8,             ...lookup("BOLA_POLIESTIRENO",{seccion:"Ø7",subtipo:"Otro",tipo:"Com",tipo_comercial_otro:"Bola Poliestireno"}), atributos:"Ø7 · 8ud/kit" },
       { nombre:"FILM",             cantPorKit:cantFilmMetros,...lookup("FILM",{ancho_real:anchoFilmMM,subtipo:"Film",tipo:"Com",tipo_film:"Sencillo"}), atributos:`${cantFilmMetros}m · ancho=${anchoFilmMM}mm` }
