@@ -16231,7 +16231,7 @@
     {
       "CODIGO": "COOT0197",
       "DESCRIPCION": "Cuerda macotrunel 8 mm",
-      "especifico": "macotrunel",
+      "especifico": "macrotunel",
       "seccion": "8 mm",
       "subtipo": "Otro",
       "tipo": "Com",
@@ -16240,7 +16240,7 @@
     {
       "CODIGO": "COOT0234",
       "DESCRIPCION": "Cuerda macrotúnel 7,5 mm",
-      "especifico": "macrotúnel",
+      "especifico": "macrotunel",
       "seccion": "7,5 mm",
       "subtipo": "Otro",
       "tipo": "Com",
