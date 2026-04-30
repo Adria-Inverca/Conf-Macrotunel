@@ -201,7 +201,7 @@ export default function ConfiguradorMacrotuneles() {
       for (const p of kit.piezas) {
         const total = p.cantPorKit * kit.cantidad;
         if (!map[p.CODIGO]) map[p.CODIGO] = {CODIGO:p.CODIGO, DESCRIPCION:p.DESCRIPCION, cantidad:0};
-        map[p.CODIGO].cantidad += total;
+        map[p.CODIGO].cantidad = Math.ceil(map[p.CODIGO].cantidad + total);
       }
     }
     return Object.values(map).sort((a,b) => a.CODIGO.localeCompare(b.CODIGO));
