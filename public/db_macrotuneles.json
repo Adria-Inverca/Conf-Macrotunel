@@ -13331,18 +13331,6 @@
       "tipo": "Union",
       "tipo_brida": "I-12"
     },
-    {
-      "CODIGO": "UNBR0684",
-      "DESCRIPCION": "Brida I-12 Ø35 e=2 L=40 GS ",
-      "Acabado": "GS",
-      "ancho_brida": 40,
-      "espesor": 2,
-      "estructural": " ",
-      "seccion_brida": "Ø35",
-      "subtipo": "Brida",
-      "tipo": "Union",
-      "tipo_brida": "I-12"
-    }
   ],
   "TORNILLOS": [
     {
