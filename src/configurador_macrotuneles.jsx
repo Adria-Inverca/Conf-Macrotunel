@@ -54,8 +54,8 @@ function calcular(inputs, vanos, db) {
   const cantMallaCentral  = numTuneles*(longTunel+2);
   const cantMallaLateral  = longTunel+2;
 
-  const bridaEstaca    = lookup("BRIDAS_I12",  {Acabado:"GS",ancho_brida:40,espesor:2,seccion_brida:"Ø40",subtipo:"Brida",tipo:"Union",tipo_brida:"I-12"});
-  const bridaArco      = lookup("BRIDAS_I12",  {Acabado:"GS",ancho_brida:40,espesor:2,seccion_brida:"Ø35",subtipo:"Brida",tipo:"Union",tipo_brida:"I-12"});
+  const bridaEstaca    = lookup("BRIDAS_I12",  {Acabado:"GS",espesor:2,seccion_brida:"Ø40",subtipo:"Brida",tipo:"Union",tipo_brida:"I-12"});
+  const bridaArco      = lookup("BRIDAS_I12",  {Acabado:"GS",espesor:2,seccion_brida:"Ø35",subtipo:"Brida",tipo:"Union",tipo_brida:"I-12"});
   const autotaladrante = lookup("TORNILLOS",   {din_tornillo:"Din-7504-K",longitud_tornillo:19,metrica:6.3,subtipo:"Tornillo",tipo:"Torn",tipo_tornillo:"Autotaladrante"});
   const tornilloPG     = lookup("TORNILLOS",   {din_tornillo:"Din-933 P.G.",longitud_tornillo:40,metrica:8,subtipo:"Tornillo",tipo:"Torn"});
   const tuerca8        = lookup("TUERCAS",     {din_tuerca:"Din-985 bloc",metrica:8,subtipo:"Tuerca",tipo:"Torn"});
