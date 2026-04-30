@@ -123,7 +123,7 @@ function calcular(inputs, vanos, db) {
 
   if (kFilm > 0) {
     kits.push({ id:"KIT_FILM", nombre:"Kit Film", cantidad:kFilm, color:"#7c3aed", piezas:[
-      { nombre:"CUERDA",           cantPorKit:cantCuerda,    ...lookup("CUERDA",{especifico:"macotrunel",seccion:"7.5 mm",subtipo:"Otro",tipo:"Com",tipo_comercial_otro:"Cuerda"}), atributos:`${cantCuerda}m/kit · 8mm` },
+      { nombre:"CUERDA",           cantPorKit:cantCuerda,    ...lookup("CUERDA",{especifico:"macrotunel",seccion:"8 mm",subtipo:"Otro",tipo:"Com",tipo_comercial_otro:"Cuerda"}), atributos:`${cantCuerda}m/kit · 8mm` },
       { nombre:"MANGUERA",         cantPorKit:32,            ...lookup("MANGUERA",{acabado_canal:"GS",especifico:"Manguera Ø20x1,2mm",subtipo:"Acc.Canal",tipo:"Acc"}), atributos:"Ø20x1,2mm · 32ud/kit" },
       { nombre:"BOLA POLIESTIRENO",cantPorKit:8,             ...lookup("BOLA_POLIESTIRENO",{seccion:"Ø7",subtipo:"Otro",tipo:"Com",tipo_comercial_otro:"Bola Poliestireno"}), atributos:"Ø7 · 8ud/kit" },
       { nombre:"FILM",             cantPorKit:cantFilmMetros,...lookup("FILM",{ancho_real:anchoFilmMM,subtipo:"Film",tipo:"Com",tipo_film:"Sencillo"}), atributos:`${cantFilmMetros}m · ancho=${anchoFilmMM}mm` }
